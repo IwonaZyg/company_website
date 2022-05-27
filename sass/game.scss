@@ -1,0 +1,145 @@
+@import 'colors';
+
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0
+}
+.boxStart{
+    position: relative;
+    height:200px;
+    width:200px;
+    border: 1px solid $red-color;
+    background-color: $black-color
+}
+.ghost{
+    position: absolute;
+    height: 100%;
+    width:80%;
+    top:0;
+    left:10%;
+    border:1px solid $black-color;
+    border-radius: 20px;
+    background-color:$green-color;
+    z-index: 3;
+}
+
+
+.eyes{
+    position: absolute;
+    display: inline-block;
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    bottom: 45%;
+    background-color: $white;
+}
+.eyeleft {
+    left: 10%;
+}
+.eyeright {
+    right:10%;
+}
+.eyes:after{
+    position: absolute;
+    bottom: 35%;
+    content: " ";
+    background-color: $black-color;
+    height: 50%;
+    width: 50%;
+    left:20%;
+    border-radius: 50%;
+}
+
+.pacman{
+    z-index: 2;
+    position: absolute;
+    height: 80%;
+    width:80%;
+    top:10%;
+    left:10%;
+    border-radius: 50%;
+    background-color: $yellow-color;
+}
+
+.eye {
+    position: absolute;
+    left: 20%;
+    top:20%;
+    width:20%;
+    background-color: $black-color;
+    border-radius: 50%;
+    height: 20%;
+}
+.mouth{
+    position: absolute;
+    left: 60%;
+    bottom:35%;
+    width: 40%;
+    background-color: $black-color;
+    height: 10%;
+}
+
+.dot{
+    position: absolute;
+    left: 35%;
+    top:35%;
+    width: 25%;
+    height: 25%;
+    background-color: $white;
+    border-radius: 50%;
+}
+.superdot{
+    position: absolute;
+    left: 25%;
+    top:25%;
+    width: 50%;
+    height: 50%;
+    background-color:$gold-color;
+    border-radius: 50%;
+}
+
+.wall{
+    background-color: $blue-color;
+    width: 100%;
+    height:100%;
+}
+.hideout {
+    background-color: $grey-color;
+    width: 100%;
+    height:100%; 
+}
+.grid{
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 0;;
+    justify-content: center;
+    display: grid;
+    cursor: grab;
+    background-color:$black-color;
+    overflow: hidden;
+}
+.box{
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.scoreBoard{
+    background-color: $black-color;
+    text-align: center;
+    font-size: 2em;
+    color:$white;
+    padding: 20px;
+}
+
+
+.bitcoin {
+    position: absolute;
+    left: 25%;
+    top:25%;
+    font-size:55%;
+    background-color: $yellow-color;
+    border-radius: 50%;
+    
+}
